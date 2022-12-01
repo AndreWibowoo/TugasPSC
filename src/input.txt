@@ -1,0 +1,7 @@
+begin
+size 4 4 
+- X - -
+- - - X
+- 1 X -
+X - X -
+end
