@@ -46,7 +46,7 @@ public class TesterAtariPuzzle {
 
     public static void main(String[] args) throws FileNotFoundException {
         //menyimpan file inputan pengguna pada sebuah variable file untuk dibaca oleh system 
-        File file = new File("D:\\Semester 7\\Pengantar Sistem Cerdas\\Tugas Algoritma Game\\Tugas 1\\Input\\input.txt");
+        File file = new File("D:\\Kuliah\\Pengantar Sistem Cerdas\\Tugas PSC Contoh\\input.txt");
         BufferedReader in;
 
         //jika filenya ada program akan menjalankan method solve, jika tidak akan menampilkan warning
@@ -120,7 +120,7 @@ public class TesterAtariPuzzle {
             // panggil method simpanKotakAngka
             demo.simpanKotakAngka();
             //panggil method reduceSearchSpace
-            demo.reduceSearcSpace();
+            demo.reduceSearchSpace();
             
             //fitness dihitung berdasarkan banyak bilangan yang ada pada puzzle selain angka 0
             /**
@@ -338,7 +338,7 @@ public class TesterAtariPuzzle {
      * method ini digunakan untuk mengurangi state space pada puzzle
      * jika value kotak angka sama dengan jumlah kotak tetangga di sekitar, maka kotak yang menjadi tetangga tersebut akan langsung diisi lampu. 
      */
-    void reduceSearcSpace() {
+    void reduceSearchSpace() {
         for (int k = 0; k < kotakAngka.size(); k++) {
             if (kotakAngka.get(k) == probability.get(k)) {
 
@@ -730,3 +730,4 @@ class PopulasiPuzzle {
     }
 
 }
+
